@@ -1,1 +1,1 @@
-angular.module('home', ['core.heroi']);
+angular.module('home', ['core.hero']);

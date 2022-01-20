@@ -1,4 +1,4 @@
-describe('Heroi Application', function() {
+describe('Hero Application', function() {
 
       
     it('should redirect `index.html` to `index.html#!/home', function() {

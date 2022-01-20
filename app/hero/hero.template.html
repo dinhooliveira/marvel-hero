@@ -1,0 +1,34 @@
+<div class="header">
+    <h3>{{$ctrl.hero.name}}</h3>
+</div>
+
+<button id="button-return" type="button" ng-click="$ctrl.goHome()">Voltar</button>
+
+<div class="container-hero">
+    <div class="container-hero-img">
+        <img ng-src="{{$ctrl.hero.thumbnail.path}}.{{$ctrl.hero.thumbnail.extension}}">
+    </div>
+    <div  class="container-hero-description">
+        <h1>Description</h1>
+        <p ng-if="$ctrl.hero.description">{{$ctrl.hero.description}}</p>
+        <p ng-if="!$ctrl.hero.description">Hero no description!</p>
+    </div>
+</div>
+
+<div class="container-hero-comics">
+      <h1>Comics</h1>
+      <ul>
+          <li ng-repeat="comics in $ctrl.hero.comics.items">
+              {{comics.name}}
+          </li>
+      </ul>
+</div>
+
+<div class="container-hero-comics">
+    <h1>Series</h1>
+    <ul>
+        <li ng-repeat="comics in $ctrl.hero.series.items">
+            {{comics.name}}
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,1 @@
+angular.module('hero', ['core.hero','ngRoute']);

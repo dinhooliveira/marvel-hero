@@ -107,6 +107,70 @@ body{
     text-align: center; 
  }
 
+.container-hero{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container-hero img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgb(80, 80, 80);
+}
+
+.container-hero-description{
+   width: 50%;
+}
+
+
+.container-hero-comics{
+    margin: 10px 150px 150px 150px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-hero-comics h1{
+    text-align: center;
+}
+
+.container-hero-comics ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.container-hero-comics  li{
+    padding: 10px;
+    font-size: large;
+    box-shadow: 0 0 5px rgb(255, 23, 23);
+    margin: 10px;
+    background: #000;
+    color: #ffff;
+}
+
+
+
+
+
+#button-return{
+    position: absolute;
+    top:90px;
+    right:50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:none;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 1em rgb(255, 23, 23);
+}
 
 
 @media screen and (max-width: 600px) {
@@ -114,5 +178,9 @@ body{
         width: 300px;
         min-height: 350px;
        
+    }
+
+    .container-hero-comics{
+        margin: 10px;
     }
 }

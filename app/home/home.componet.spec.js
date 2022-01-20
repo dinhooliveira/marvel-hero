@@ -12,8 +12,8 @@ describe('home', function () {
       ctrl = $componentController('home');
     }));
 
-    it('should  model herois equal []', function () {
-      expect(ctrl.herois.length).toBe(0);
+    it('should  model heros equal []', function () {
+      expect(ctrl.heros.length).toBe(0);
     });
 
   });

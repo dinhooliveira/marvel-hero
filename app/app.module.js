@@ -1,4 +1,5 @@
-angular.module('heroiApp', [
+angular.module('heroApp', [
     'ngRoute',
-    'home'
+    'home',
+    'hero'
 ]);

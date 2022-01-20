@@ -14,10 +14,10 @@
 
 <div class="container-card">
     <card
-        ng-repeat="heroi in $ctrl.herois" 
-        imgurl="{{heroi.thumbnail.path}}.{{heroi.thumbnail.extension}}"
-        name="heroi.name" 
-        description="heroi.description" 
-        ng-click="$ctrl.find(heroi.id)"
+        ng-repeat="hero in $ctrl.heros" 
+        imgurl="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}"
+        name="hero.name" 
+        description="hero.description" 
+        ng-click="$ctrl.find(hero.id)"
     />
 </div>
