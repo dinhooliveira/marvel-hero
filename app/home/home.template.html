@@ -1,0 +1,23 @@
+<div class="header">
+    <h3>{{$ctrl.title}}</h3>
+</div>
+
+<div class="container-search">
+    <input 
+        id="input-search"
+        placeholder="SEARCH YOUR HERO..." 
+        ng-model="$ctrl.search"  
+        ng-keypress="($event.charCode==13)? $ctrl.doSearch() : return"
+    >
+    <button id="button-search" type="button" ng-click="$ctrl.doSearch()">Search</button>
+</div>
+
+<div class="container-card">
+    <card
+        ng-repeat="heroi in $ctrl.herois" 
+        imgurl="{{heroi.thumbnail.path}}.{{heroi.thumbnail.extension}}"
+        name="heroi.name" 
+        description="heroi.description" 
+        ng-click="$ctrl.find(heroi.id)"
+    />
+</div>

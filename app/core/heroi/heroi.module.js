@@ -1,0 +1,1 @@
+angular.module('core.heroi', ['ngResource']);
